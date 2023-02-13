@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    background-image: url('https://img.freepik.com/premium-vector/landscape-cartoon-scene-with-green-hills-white-cloud-summer-blue-sky-background_120819-917.jpg?w=2000');
+    background-size: cover;
+}
+img{
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fly 5s ease-in;
+}
+@keyframes fly {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-50%, -100vh);
+    }
+}
